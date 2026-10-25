@@ -1,0 +1,60 @@
+# Video & reel scripts
+video-scripts/
+
+# Video, audio, and media files
+Videos/
+*.mp4
+*.mov
+*.mp3
+*.wav
+*.m4a
+*.avi
+
+# Local journal drafts and assets
+journal/
+
+# Remotion local caches, builds & media
+.remotion/
+.cache/
+out/
+dist/
+build/
+node_modules
+node_modules/
+midi-reel/node_modules
+midi-reel/node_modules/
+**/node_modules
+**/node_modules/
+midi-reel/.remotion/
+midi-reel/out/
+midi-reel/build/
+
+# KiCad temporary & auto-backup files
+*.kicad_prb
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*-save.kicad_sch
+*-save.kicad_pcb
+_autosave-*
+*.bak
+*.lck
+fp-info-cache
+
+# Gerber and manufacturing zip outputs
+production/
+*.zip
+!kicad/hlf_midi_gerbers.zip
+
+# Python caches & scripts
+__pycache__/
+*.py[cod]
+*$py.class
+scratch/
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db

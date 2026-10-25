@@ -1,0 +1,1790 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "22361ac3-42e2-4f1c-8457-abd3349d91b0")
+	(paper "A3")
+	(title_block
+		(title "HLF-MIDI Solid-State Keypad")
+		(date "2026-10-24")
+		(rev "v1.0")
+		(company "Hack Club Half Life")
+		(comment 1 "ESP32-S3 Capacitive Touch Controller with Reverse NeoPixels")
+		(comment 2 "Open Source Hardware (OSHW)")
+	)
+	(lib_symbols
+		(symbol "HLF:ESP32-S3-WROOM-1"
+			(pin_names (offset 1.016))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U" (at 0 33.02 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "ESP32-S3-WROOM-1" (at 0 -33.02 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(property "Description" "ESP32-S3-WROOM-1" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(symbol "ESP32-S3-WROOM-1_0_1"
+				(rectangle (start -17.78 30.48) (end 17.78 -30.48) (stroke (width 0.254)) (fill (type background)))
+			)
+			(symbol "ESP32-S3-WROOM-1_1_1"
+				(pin power_in line (at -20.32 25.4 0) (length 2.54) (name "3V3" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+				(pin power_in line (at -20.32 -25.4 0) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin power_in line (at -20.32 -22.86 0) (length 2.54) (name "GND_PAD" (effects (font (size 1.27 1.27)))) (number "41" (effects (font (size 1.27 1.27)))))
+				(pin input line (at -20.32 20.32 0) (length 2.54) (name "EN" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 20.32 25.4 180) (length 2.54) (name "IO1/T1" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 20.32 20.32 180) (length 2.54) (name "IO2/T2" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 20.32 15.24 180) (length 2.54) (name "IO3/T3" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 20.32 10.16 180) (length 2.54) (name "IO4/T4" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 20.32 5.08 180) (length 2.54) (name "IO5/T5" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 20.32 0 180) (length 2.54) (name "IO6/T6" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 20.32 -5.08 180) (length 2.54) (name "IO7/T7" (effects (font (size 1.27 1.27)))) (number "10" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 20.32 -10.16 180) (length 2.54) (name "IO8/T8" (effects (font (size 1.27 1.27)))) (number "11" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at -20.32 15.24 0) (length 2.54) (name "IO9/ENC_A" (effects (font (size 1.27 1.27)))) (number "12" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at -20.32 10.16 0) (length 2.54) (name "IO10/ENC_B" (effects (font (size 1.27 1.27)))) (number "13" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at -20.32 5.08 0) (length 2.54) (name "IO11/ENC_SW" (effects (font (size 1.27 1.27)))) (number "14" (effects (font (size 1.27 1.27)))))
+				(pin input line (at -20.32 0 0) (length 2.54) (name "IO12/FADER" (effects (font (size 1.27 1.27)))) (number "15" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at -20.32 -5.08 0) (length 2.54) (name "IO13/OCT_DN" (effects (font (size 1.27 1.27)))) (number "16" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at -20.32 -10.16 0) (length 2.54) (name "IO14/OCT_UP" (effects (font (size 1.27 1.27)))) (number "17" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 20.32 -17.78 180) (length 2.54) (name "IO19/USB_D-" (effects (font (size 1.27 1.27)))) (number "22" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 20.32 -22.86 180) (length 2.54) (name "IO20/USB_D+" (effects (font (size 1.27 1.27)))) (number "23" (effects (font (size 1.27 1.27)))))
+				(pin output line (at 20.32 -27.94 180) (length 2.54) (name "IO21/NEO" (effects (font (size 1.27 1.27)))) (number "24" (effects (font (size 1.27 1.27)))))
+			)
+		)
+
+		(symbol "HLF:USB_C_16P"
+			(pin_names (offset 1.016))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J" (at 0 12.7 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "USB-C-16P" (at 0 -12.7 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(property "Description" "USB-C-16P" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(symbol "USB_C_16P_0_1"
+				(rectangle (start -12.7 10.16) (end 12.7 -10.16) (stroke (width 0.254)) (fill (type background)))
+			)
+			(symbol "USB_C_16P_1_1"
+				(pin power_out line (at 15.24 7.62 180) (length 2.54) (name "VBUS" (effects (font (size 1.27 1.27)))) (number "A4/B9" (effects (font (size 1.27 1.27)))))
+				(pin power_out line (at 15.24 -7.62 180) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "A1/B12" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at -15.24 5.08 0) (length 2.54) (name "CC1" (effects (font (size 1.27 1.27)))) (number "A5" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at -15.24 -5.08 0) (length 2.54) (name "CC2" (effects (font (size 1.27 1.27)))) (number "B5" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 15.24 2.54 180) (length 2.54) (name "D+" (effects (font (size 1.27 1.27)))) (number "A6/B6" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 15.24 -2.54 180) (length 2.54) (name "D-" (effects (font (size 1.27 1.27)))) (number "A7/B7" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 0 -12.7 90) (length 2.54) (name "SHIELD" (effects (font (size 1.27 1.27)))) (number "SH" (effects (font (size 1.27 1.27)))))
+			)
+		)
+
+		(symbol "HLF:TLV75533"
+			(pin_names (offset 1.016))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U" (at 0 10.16 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "TLV75533PDBVR" (at 0 -10.16 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(property "Description" "TLV75533PDBVR" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(symbol "TLV75533_0_1"
+				(rectangle (start -10.16 7.62) (end 10.16 -7.62) (stroke (width 0.254)) (fill (type background)))
+			)
+			(symbol "TLV75533_1_1"
+				(pin power_in line (at -12.7 5.08 0) (length 2.54) (name "IN" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin power_in line (at 0 -10.16 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+				(pin input line (at -12.7 -2.54 0) (length 2.54) (name "EN" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+				(pin power_out line (at 12.7 5.08 180) (length 2.54) (name "OUT" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+			)
+		)
+
+		(symbol "HLF:USBLC6-2SC6"
+			(pin_names (offset 1.016))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U" (at 0 10.16 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "USBLC6-2SC6" (at 0 -10.16 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(property "Description" "USBLC6-2SC6" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(symbol "USBLC6-2SC6_0_1"
+				(rectangle (start -10.16 7.62) (end 10.16 -7.62) (stroke (width 0.254)) (fill (type background)))
+			)
+			(symbol "USBLC6-2SC6_1_1"
+				(pin bidirectional line (at -12.7 2.54 0) (length 2.54) (name "IO1_A" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin power_in line (at 0 -10.16 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at -12.7 -2.54 0) (length 2.54) (name "IO2_A" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 12.7 -2.54 180) (length 2.54) (name "IO2_B" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+				(pin power_in line (at 0 10.16 270) (length 2.54) (name "VBUS" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line (at 12.7 2.54 180) (length 2.54) (name "IO1_B" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+			)
+		)
+
+		(symbol "HLF:EC11_Encoder"
+			(pin_names (offset 1.016))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "ENC" (at 0 12.7 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "EC11" (at 0 -12.7 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(property "Description" "EC11" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(symbol "EC11_Encoder_0_1"
+				(rectangle (start -10.16 10.16) (end 10.16 -10.16) (stroke (width 0.254)) (fill (type background)))
+			)
+			(symbol "EC11_Encoder_1_1"
+				(pin passive line (at 12.7 5.08 180) (length 2.54) (name "A" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at -12.7 0 0) (length 2.54) (name "C" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 12.7 -5.08 180) (length 2.54) (name "B" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 12.7 7.62 180) (length 2.54) (name "SW1" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at -12.7 7.62 0) (length 2.54) (name "SW2" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+			)
+		)
+
+		(symbol "HLF:Bourns_PTA4543"
+			(pin_names (offset 1.016))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV" (at 0 10.16 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "PTA4543-10k" (at 0 -10.16 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(property "Description" "PTA4543-10k" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(symbol "Bourns_PTA4543_0_1"
+				(rectangle (start -7.62 7.62) (end 7.62 -7.62) (stroke (width 0.254)) (fill (type background)))
+			)
+			(symbol "Bourns_PTA4543_1_1"
+				(pin passive line (at -10.16 5.08 0) (length 2.54) (name "1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 10.16 0 180) (length 2.54) (name "2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at -10.16 -5.08 0) (length 2.54) (name "3" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+			)
+		)
+
+		(symbol "HLF:SK6812MINI-E"
+			(pin_names (offset 1.016))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "LED" (at 0 8.89 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "SK6812MINI-E" (at 0 -8.89 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(property "Description" "SK6812MINI-E" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(symbol "SK6812MINI-E_0_1"
+				(rectangle (start -7.62 6.35) (end 7.62 -6.35) (stroke (width 0.254)) (fill (type background)))
+			)
+			(symbol "SK6812MINI-E_1_1"
+				(pin power_in line (at 0 8.89 270) (length 2.54) (name "VDD" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin output line (at 10.16 0 180) (length 2.54) (name "DOUT" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+				(pin power_in line (at 0 -8.89 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+				(pin input line (at -10.16 0 0) (length 2.54) (name "DIN" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			)
+		)
+
+		(symbol "HLF:Touch_Pad"
+			(pin_names (offset 1.016))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP" (at 0 7.62 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "Touch_Pad" (at 0 -7.62 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(property "Description" "Touch_Pad" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(symbol "Touch_Pad_0_1"
+				(rectangle (start -5.08 5.08) (end 5.08 -5.08) (stroke (width 0.254)) (fill (type background)))
+			)
+			(symbol "Touch_Pad_1_1"
+				(pin passive line (at -7.62 0 0) (length 2.54) (name "PAD" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			)
+		)
+
+		(symbol "HLF:SW_Push"
+			(pin_names (offset 1.016))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW" (at 0 6.35 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "SW_Push" (at 0 -6.35 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(property "Description" "SW_Push" (at 0 0 0) (effects (font (size 1.27 1.27))) (hide yes))
+			(symbol "SW_Push_0_1"
+				(rectangle (start -5.08 3.81) (end 5.08 -3.81) (stroke (width 0.254)) (fill (type background)))
+			)
+			(symbol "SW_Push_1_1"
+				(pin passive line (at -7.62 0 0) (length 2.54) (name "1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 7.62 0 180) (length 2.54) (name "2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			)
+		)
+
+	)
+
+	(symbol
+		(lib_id "HLF:ESP32-S3-WROOM-1")
+		(at 170 120 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1a74cf7d-02e4-4ba0-b9e3-6bf28949604a")
+		(property "Reference" "U1"
+			(at 170 106 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "ESP32-S3-WROOM-1"
+			(at 170 134 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "RF_Module:ESP32-S3-WROOM-1"
+			(at 170 120 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 170 120 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "ESP32-S3-WROOM-1"
+			(at 170 120 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "2"
+			(uuid "6ee6542a-0ba4-4cbc-9b24-27c5e1e576ae")
+		)
+		(pin "1"
+			(uuid "f49d8cb2-55b5-46f8-9676-1a4f17f851e0")
+		)
+		(pin "41"
+			(uuid "26ae52a2-e1c8-4c95-ba3b-bc9dd9acc7c0")
+		)
+		(pin "3"
+			(uuid "772c6c28-587c-4cc2-8ced-e8400b6cc920")
+		)
+		(pin "4"
+			(uuid "4723cf62-7768-4c97-b9f2-84a5588626cf")
+		)
+		(pin "5"
+			(uuid "dd868f0c-24bd-4c53-b1fe-2dc372bf1beb")
+		)
+		(pin "6"
+			(uuid "2464cbfb-ee5e-4bff-bbad-5b6d71ee41de")
+		)
+		(pin "7"
+			(uuid "79402a01-40b9-43ec-af77-71c37300acbb")
+		)
+		(pin "8"
+			(uuid "9f25790e-4979-4d3a-84d5-ffc58d941a26")
+		)
+		(pin "9"
+			(uuid "63dedf1b-2191-4ed5-ad7a-6a3b539c9c50")
+		)
+		(pin "10"
+			(uuid "e3437857-20e6-4ad9-a748-31d9ca46a3c5")
+		)
+		(pin "11"
+			(uuid "a806d062-8d3f-4c08-9c00-962a4c47b38a")
+		)
+		(pin "12"
+			(uuid "15a4988c-8911-402b-acd9-c078c7402402")
+		)
+		(pin "13"
+			(uuid "e372be50-f892-46b9-8def-5e292fd2312d")
+		)
+		(pin "14"
+			(uuid "1eda8bc2-c806-4d26-8f40-112a0b2d0aef")
+		)
+		(pin "15"
+			(uuid "941be03f-5930-4b29-a1a2-e0033e2401ae")
+		)
+		(pin "16"
+			(uuid "d7515fb9-d7e5-4a13-bef9-532e57fcda52")
+		)
+		(pin "17"
+			(uuid "27cea361-cef0-48cd-adad-4452388dbe10")
+		)
+		(pin "22"
+			(uuid "c33cdf99-cdf6-477f-88ac-6d225e6ae00e")
+		)
+		(pin "23"
+			(uuid "01163863-faa5-42c6-ae2d-3a611f0591c4")
+		)
+		(pin "24"
+			(uuid "eff366b7-74a6-48e6-90c3-1578d378132a")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:USB_C_16P")
+		(at 50 50 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cacf0b4c-4c68-4655-be8a-474de3160a02")
+		(property "Reference" "J1"
+			(at 50 36 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "USB-C-16P"
+			(at 50 64 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_16P"
+			(at 50 50 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 50 50 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "USB-C-16P"
+			(at 50 50 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "A4/B9"
+			(uuid "4348198f-4131-4e2b-ab9c-311a200365b0")
+		)
+		(pin "A1/B12"
+			(uuid "0c0d3d3a-bf12-4e8b-abfe-97f1f35914b2")
+		)
+		(pin "A5"
+			(uuid "313f5d52-bd08-4cd3-9b04-edc77c2a7df7")
+		)
+		(pin "B5"
+			(uuid "a5fdae13-350c-4088-8fcf-58ddc96aa164")
+		)
+		(pin "A6/B6"
+			(uuid "6c8c9082-33bd-4b52-89a6-440f526dabaf")
+		)
+		(pin "A7/B7"
+			(uuid "50926932-7f21-44fe-8699-2146b8d50054")
+		)
+		(pin "SH"
+			(uuid "5e615b19-6a6f-4ea5-9b0a-3ec3b372eee2")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:USBLC6-2SC6")
+		(at 85 50 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f2be94fe-be55-45f9-bfa9-c96175ded3fe")
+		(property "Reference" "U2"
+			(at 85 36 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "USBLC6-2SC6"
+			(at 85 64 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 85 50 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 85 50 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "USBLC6-2SC6"
+			(at 85 50 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "d5b679fe-198c-42d9-bd8f-6afe1474cd04")
+		)
+		(pin "2"
+			(uuid "b4d0fe8e-dab6-4608-bf7d-83624332a70f")
+		)
+		(pin "3"
+			(uuid "2e6feb6e-5e2a-4f9e-84d3-9041089cb2ea")
+		)
+		(pin "4"
+			(uuid "3896a99f-6f11-4794-9924-413550c97de5")
+		)
+		(pin "5"
+			(uuid "7a4fd046-c3fd-4494-a2a5-ccb0b5a815cc")
+		)
+		(pin "6"
+			(uuid "eb250908-dd7f-4916-b7a3-c368a22733d3")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:TLV75533")
+		(at 120 50 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bc77b6db-7186-4f18-9391-0c1d263b7dbc")
+		(property "Reference" "U3"
+			(at 120 36 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "TLV75533PDBVR"
+			(at 120 64 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 120 50 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 120 50 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "TLV75533PDBVR"
+			(at 120 50 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "a226f2ba-e4e0-428b-9e0c-54effd04b2ea")
+		)
+		(pin "2"
+			(uuid "c68644a8-76e1-431f-866f-28cefac09871")
+		)
+		(pin "3"
+			(uuid "c3aab81c-b5fb-4ef5-82cd-3546e6c23cc6")
+		)
+		(pin "5"
+			(uuid "c2036581-24db-4135-b111-903e94d4920d")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:EC11_Encoder")
+		(at 70 115 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7270a449-2e07-4574-9416-8e6a86e092e6")
+		(property "Reference" "ENC1"
+			(at 70 101 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "EC11"
+			(at 70 129 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Rotary_Encoder:EC11_Switch_Vertical"
+			(at 70 115 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 70 115 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "EC11"
+			(at 70 115 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "35b8461c-529c-4cfd-bd79-06da6fc16eaa")
+		)
+		(pin "2"
+			(uuid "db60cc61-d6d0-4599-bac8-fe4053c616c0")
+		)
+		(pin "3"
+			(uuid "2a30c895-054e-4e18-aaf0-948c1cb9aeaa")
+		)
+		(pin "4"
+			(uuid "bc138df6-6da4-4217-8320-058f44b0ac33")
+		)
+		(pin "5"
+			(uuid "a02b8659-a19f-482b-8174-8b74d841c2ac")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "ENC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:Bourns_PTA4543")
+		(at 70 155 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "60d4a944-50b0-4b53-8365-a283550ca41b")
+		(property "Reference" "RV1"
+			(at 70 141 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "PTA4543-10k"
+			(at 70 169 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Potentiometer_THT:Bourns_PTA4543"
+			(at 70 155 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 70 155 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "PTA4543-10k"
+			(at 70 155 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "3a7f77c0-ed75-49ff-9d07-4cc147838b31")
+		)
+		(pin "2"
+			(uuid "7c588305-b511-4dea-8ebe-5676d6fbc6b2")
+		)
+		(pin "3"
+			(uuid "e77b2b94-8d0f-430f-bd5c-8dd922acd4dc")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "RV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:SW_Push")
+		(at 70 185 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "59a109b1-2e04-4cfe-9298-2f4912cb5bb4")
+		(property "Reference" "SW1"
+			(at 70 171 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "OCT_UP"
+			(at 70 199 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_TL3342"
+			(at 70 185 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 70 185 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "OCT_UP"
+			(at 70 185 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "077e5055-fe21-4c21-8727-75523d026c90")
+		)
+		(pin "2"
+			(uuid "d7d1a754-cbe9-433c-ac77-63bfc57df922")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:SW_Push")
+		(at 70 200 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9fcb165c-fa2e-4f34-89c1-7c25e098c778")
+		(property "Reference" "SW2"
+			(at 70 186 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "OCT_DN"
+			(at 70 214 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_TL3342"
+			(at 70 200 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 70 200 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "OCT_DN"
+			(at 70 200 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "0d8dc217-4656-495d-9c99-90f174f79d77")
+		)
+		(pin "2"
+			(uuid "56bc42ee-36dd-4c75-b96f-5aacb906152c")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:SW_Push")
+		(at 70 215 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6494abc9-3768-43d4-9b6e-b2d4c7c7152c")
+		(property "Reference" "SW3"
+			(at 70 201 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "RESET"
+			(at 70 229 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_TL3342"
+			(at 70 215 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 70 215 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "RESET"
+			(at 70 215 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "de077f32-93a8-4add-a96e-2fc6bcccb936")
+		)
+		(pin "2"
+			(uuid "674e4b78-cc64-4d9e-b5df-8dae2984013c")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:SW_Push")
+		(at 70 230 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fed4d51c-3aa0-422b-8294-5ba4c646f2af")
+		(property "Reference" "SW4"
+			(at 70 216 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "BOOT"
+			(at 70 244 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_TL3342"
+			(at 70 230 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 70 230 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "BOOT"
+			(at 70 230 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "9f277eed-b900-45b6-9e22-83347cea59cb")
+		)
+		(pin "2"
+			(uuid "5ac841af-cd28-4f6a-97cd-f6c97dc2d34e")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:Touch_Pad")
+		(at 240 50 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "137dde5a-d6ac-45d4-9d31-8d4e3463219f")
+		(property "Reference" "TP1"
+			(at 240 36 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "TOUCH_KEY_1"
+			(at 240 64 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitive_Touch:Touch_Key_15x45"
+			(at 240 50 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 240 50 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "TOUCH_KEY_1"
+			(at 240 50 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "5abc12c7-0362-4825-8fe2-65da8577ed95")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:Touch_Pad")
+		(at 240 70 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3b923daf-c48d-41f4-b4b3-1cb0a3a7432f")
+		(property "Reference" "TP2"
+			(at 240 56 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "TOUCH_KEY_2"
+			(at 240 84 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitive_Touch:Touch_Key_15x45"
+			(at 240 70 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 240 70 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "TOUCH_KEY_2"
+			(at 240 70 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "1d1a8053-94ea-4c9e-84c6-3ea5245ee5c5")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:Touch_Pad")
+		(at 240 90 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5a9c07da-d8a1-4cc8-9976-8cb25a637350")
+		(property "Reference" "TP3"
+			(at 240 76 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "TOUCH_KEY_3"
+			(at 240 104 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitive_Touch:Touch_Key_15x45"
+			(at 240 90 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 240 90 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "TOUCH_KEY_3"
+			(at 240 90 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "d1b89039-333c-42d6-8b04-7422d7b472e7")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:Touch_Pad")
+		(at 240 110 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a4f864d2-11c3-45af-ad8e-a31f922ff2ea")
+		(property "Reference" "TP4"
+			(at 240 96 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "TOUCH_KEY_4"
+			(at 240 124 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitive_Touch:Touch_Key_15x45"
+			(at 240 110 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 240 110 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "TOUCH_KEY_4"
+			(at 240 110 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "73cc9b37-2b45-41d3-985e-8bf407863ee4")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:Touch_Pad")
+		(at 240 130 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2084bf79-2ae5-4121-8bb0-691a8ba638cf")
+		(property "Reference" "TP5"
+			(at 240 116 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "TOUCH_KEY_5"
+			(at 240 144 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitive_Touch:Touch_Key_15x45"
+			(at 240 130 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 240 130 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "TOUCH_KEY_5"
+			(at 240 130 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "b839d69e-47a4-4a6a-892f-978b76924cf1")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:Touch_Pad")
+		(at 240 150 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "19dca2f8-3765-4d80-bc6e-a451d01ebffe")
+		(property "Reference" "TP6"
+			(at 240 136 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "TOUCH_KEY_6"
+			(at 240 164 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitive_Touch:Touch_Key_15x45"
+			(at 240 150 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 240 150 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "TOUCH_KEY_6"
+			(at 240 150 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "7abd501c-c4bc-4015-8f00-354d7fb4fd3a")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:Touch_Pad")
+		(at 240 170 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b854ff8-8042-45c2-abad-3bd24499efbb")
+		(property "Reference" "TP7"
+			(at 240 156 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "TOUCH_KEY_7"
+			(at 240 184 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitive_Touch:Touch_Key_15x45"
+			(at 240 170 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 240 170 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "TOUCH_KEY_7"
+			(at 240 170 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "85fcb647-0d9e-4a70-801a-df1d920e5537")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:Touch_Pad")
+		(at 240 190 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8c39267b-15f0-4149-909b-7dd2ef941636")
+		(property "Reference" "TP8"
+			(at 240 176 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "TOUCH_KEY_8"
+			(at 240 204 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitive_Touch:Touch_Key_15x45"
+			(at 240 190 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 240 190 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "TOUCH_KEY_8"
+			(at 240 190 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "bb86cab6-c800-47f9-ae1d-93aa4a6150b3")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:SK6812MINI-E")
+		(at 280 50 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bcb4b82a-7b88-4281-8d5f-36be2f251b88")
+		(property "Reference" "LED1"
+			(at 280 36 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 280 64 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E"
+			(at 280 50 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 280 50 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "SK6812MINI-E"
+			(at 280 50 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "f3f651af-e288-4c68-885c-28b29bf5a3e8")
+		)
+		(pin "2"
+			(uuid "96e80a15-1630-4768-8797-d1eb99ec4aae")
+		)
+		(pin "3"
+			(uuid "42c3e1a2-df10-4867-9424-76d35a427749")
+		)
+		(pin "4"
+			(uuid "db81bb91-65d7-426f-9ea6-caf2ef8a5dac")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "LED1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:SK6812MINI-E")
+		(at 280 70 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3453dc09-905d-4856-bc11-352911a248df")
+		(property "Reference" "LED2"
+			(at 280 56 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 280 84 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E"
+			(at 280 70 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 280 70 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "SK6812MINI-E"
+			(at 280 70 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "ea8f7e13-bea7-4fdd-b412-d3ac075e3757")
+		)
+		(pin "2"
+			(uuid "23ed39a1-12e7-4534-8c4c-c120e1d0b249")
+		)
+		(pin "3"
+			(uuid "054d74b9-a91c-41b5-aa06-b00a78d59f5b")
+		)
+		(pin "4"
+			(uuid "6fed967d-aabd-47e3-aa23-7e1bf61c57e5")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "LED2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:SK6812MINI-E")
+		(at 280 90 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e637c430-eb0b-4039-b865-49c80ba4a99d")
+		(property "Reference" "LED3"
+			(at 280 76 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 280 104 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E"
+			(at 280 90 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 280 90 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "SK6812MINI-E"
+			(at 280 90 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "083bd118-94dd-42d2-b621-d18d23143886")
+		)
+		(pin "2"
+			(uuid "61ad4f1e-f0be-496b-b984-1738ffb73dd6")
+		)
+		(pin "3"
+			(uuid "a4499a2a-6e0f-4e1a-93d6-83f03e21af79")
+		)
+		(pin "4"
+			(uuid "76a7466d-1461-464e-84cc-7fb73b749c44")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "LED3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:SK6812MINI-E")
+		(at 280 110 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "647b6d29-da1b-4b48-8e06-48b9aa4502d7")
+		(property "Reference" "LED4"
+			(at 280 96 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 280 124 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E"
+			(at 280 110 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 280 110 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "SK6812MINI-E"
+			(at 280 110 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "8cbe52c3-1e98-4c24-a7ec-d0535bfeb65f")
+		)
+		(pin "2"
+			(uuid "39212425-5a2d-4def-8810-d3f331a7c8fb")
+		)
+		(pin "3"
+			(uuid "7302d2cf-d448-4ef9-a27f-3a810f9a17ec")
+		)
+		(pin "4"
+			(uuid "aaa01389-5160-4c0c-945d-89adc4e37d9a")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "LED4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:SK6812MINI-E")
+		(at 280 130 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d7e51a5f-71f9-49bf-a0c1-847cdb372b9e")
+		(property "Reference" "LED5"
+			(at 280 116 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 280 144 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E"
+			(at 280 130 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 280 130 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "SK6812MINI-E"
+			(at 280 130 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "ed5c0918-a314-4808-930d-eb749b85fb55")
+		)
+		(pin "2"
+			(uuid "f201ad55-99d7-417c-9f61-a0378f3fc1ba")
+		)
+		(pin "3"
+			(uuid "566d6f2c-2451-4d88-ba51-f89ff7e07f0e")
+		)
+		(pin "4"
+			(uuid "393eae81-d00a-4d36-861a-2513255bb6e7")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "LED5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:SK6812MINI-E")
+		(at 280 150 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "188a337f-dc4c-451c-b3c8-815cf1d4bf74")
+		(property "Reference" "LED6"
+			(at 280 136 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 280 164 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E"
+			(at 280 150 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 280 150 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "SK6812MINI-E"
+			(at 280 150 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "36cb1ec3-466d-4733-b164-84a33aedd301")
+		)
+		(pin "2"
+			(uuid "cd4f3896-4342-4d3c-8151-3f7ed3dce03e")
+		)
+		(pin "3"
+			(uuid "405b33ec-1448-4f5a-a271-3031f829b432")
+		)
+		(pin "4"
+			(uuid "c685d08f-ceda-4b18-982d-d250f1878381")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "LED6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:SK6812MINI-E")
+		(at 280 170 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "037a83fe-8a25-481c-a8ed-affa2ab28c35")
+		(property "Reference" "LED7"
+			(at 280 156 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 280 184 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E"
+			(at 280 170 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 280 170 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "SK6812MINI-E"
+			(at 280 170 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "5040355f-89ac-47a9-a70d-6659d58f8ea6")
+		)
+		(pin "2"
+			(uuid "9014ff1b-1152-43c8-b242-58c4a4123120")
+		)
+		(pin "3"
+			(uuid "0be7461b-e4f9-4797-b03e-15411f6e7aa9")
+		)
+		(pin "4"
+			(uuid "f3fa0c8f-b8c8-49cb-ae1a-0f4378003673")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "LED7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HLF:SK6812MINI-E")
+		(at 280 190 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e34be569-1785-499f-802e-40ea36a66355")
+		(property "Reference" "LED8"
+			(at 280 176 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 280 204 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E"
+			(at 280 190 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Datasheet" "~"
+			(at 280 190 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(property "Description" "SK6812MINI-E"
+			(at 280 190 0)
+			(effects (font (size 1.27 1.27)))
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "b4afbed2-5bd1-4100-bc88-035729399178")
+		)
+		(pin "2"
+			(uuid "c0a0a7eb-0e45-4d00-a187-ea41893afe93")
+		)
+		(pin "3"
+			(uuid "a383ef82-dc9a-4a46-8ac2-4ac7816d0fc2")
+		)
+		(pin "4"
+			(uuid "5ff641b8-b3fd-463c-aa01-9ee2b024790d")
+		)
+		(instances
+			(project "hlf_midi"
+				(path "/22361ac3-42e2-4f1c-8457-abd3349d91b0"
+					(reference "LED8")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(label "+5V"
+		(at 68 57.62 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "a231f042-c5da-4135-8083-b58565b621bd")
+	)
+	(label "+5V"
+		(at 107 55.08 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "eb879712-7c99-4973-8c2b-a2e0642c7c82")
+	)
+	(label "+3V3"
+		(at 135 55.08 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "80e5379b-24b5-4755-abb6-9698f2758681")
+	)
+	(label "+3V3"
+		(at 148 145.4 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "c7b5ca7d-1940-41d9-bb1d-72d934ae02cc")
+	)
+	(label "GND"
+		(at 68 42.38 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "5a4bb810-dc23-45a6-89e6-7879495dbe9e")
+	)
+	(label "GND"
+		(at 120 39.84 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "61e75c5b-24f7-4648-afa8-465c39d48f40")
+	)
+	(label "GND"
+		(at 148 94.6 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "a1958b16-1c8c-4aa2-a528-4b932a4dd80a")
+	)
+	(label "TOUCH_1"
+		(at 193 145.4 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "139c3ba9-0735-4fb4-9076-66ec842d723f")
+	)
+	(label "TOUCH_1"
+		(at 230 50 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "25b4a6c5-4bf4-4f5a-bde4-9b833ccaaf6a")
+	)
+	(label "TOUCH_2"
+		(at 193 140.32 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "070db1a4-8926-4e39-bc5b-d97f365d186e")
+	)
+	(label "TOUCH_2"
+		(at 230 70 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "9c41a575-ee3b-4fee-b2b8-cd996941d6e0")
+	)
+	(label "TOUCH_3"
+		(at 193 135.24 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "b787cdf2-1c90-459f-b424-9868aabf9c00")
+	)
+	(label "TOUCH_3"
+		(at 230 90 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "1af0b873-f663-4381-b1f0-873c91670444")
+	)
+	(label "TOUCH_4"
+		(at 193 130.16 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "396efbdc-2cf1-45e8-8cd4-bb51bf61fc0c")
+	)
+	(label "TOUCH_4"
+		(at 230 110 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "022f87ad-ffeb-4040-bd4b-19c4f82e6530")
+	)
+	(label "TOUCH_5"
+		(at 193 125.08000000000001 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "76c8829e-96d8-4d3a-a27c-0b750173b48f")
+	)
+	(label "TOUCH_5"
+		(at 230 130 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "1ec5aee0-1ce9-4002-8224-92ca5dc415a0")
+	)
+	(label "TOUCH_6"
+		(at 193 120.0 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "4119341c-14bf-4e83-8b50-631f4358e11e")
+	)
+	(label "TOUCH_6"
+		(at 230 150 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "8940c3d2-e497-421c-8807-2a690a77cbd3")
+	)
+	(label "TOUCH_7"
+		(at 193 114.92 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "b38311b3-f56b-4155-82bb-bad8a50a45a9")
+	)
+	(label "TOUCH_7"
+		(at 230 170 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "46c539e6-f81d-462d-ba4e-243573e64553")
+	)
+	(label "TOUCH_8"
+		(at 193 109.84 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "dc6b34fc-4df4-4fba-8492-3c49695820e8")
+	)
+	(label "TOUCH_8"
+		(at 230 190 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "a6007f74-04fa-4908-827d-56ce611c03cd")
+	)
+	(label "USB_D_P"
+		(at 100 47.46 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "0215c6e4-d34b-409b-a868-5fdd815dd969")
+	)
+	(label "USB_D_N"
+		(at 100 52.54 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "bb16fe66-c22c-48d8-be1a-618d2142f887")
+	)
+	(label "USB_D_P"
+		(at 193 97.14 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "3c613bfb-5997-43ff-b66e-be37fbb8d512")
+	)
+	(label "USB_D_N"
+		(at 193 102.22 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "ef446ebb-a9c2-4c9a-ac80-f16ae5e5d0eb")
+	)
+	(label "ENC_A"
+		(at 85 120.08 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "a3d3b5f9-78b6-4ee5-99c1-cf0852910872")
+	)
+	(label "ENC_B"
+		(at 85 109.92 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "e3cb64f0-6b2e-4402-883c-e0707764dc66")
+	)
+	(label "ENC_SW"
+		(at 85 122.62 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "3eeb3fa7-d747-484c-8c61-be419d83f65c")
+	)
+	(label "ADC_FADER"
+		(at 82 155 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "8dbf0689-21d3-4340-958b-8864b97d1676")
+	)
+	(label "OCT_UP"
+		(at 80 185 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "73393862-f608-4aeb-9863-163b50abaeef")
+	)
+	(label "OCT_DN"
+		(at 80 200 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "ebe70655-0c72-4538-b217-6f1d8a63278a")
+	)
+	(label "NEOPIXEL"
+		(at 193 92.06 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "99aa7219-de1d-4d13-af3e-78f88f92375a")
+	)
+	(label "NEOPIXEL"
+		(at 268 50 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)))
+		(uuid "603b591a-afe1-481f-a5ce-6095f58b505f")
+	)
+
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

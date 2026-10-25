@@ -2,7 +2,7 @@
 
 A super slim, solid-state MIDI keyboard built with an ESP32-S3 that uses capacitive touch pads instead of mechanical switches. It plugs straight into any laptop, phone, or DAW as a plug-and-play USB-MIDI device.
 
-![HLF-MIDI 3D Render](kicad/renders/hlf_midi_perspective_3d.png)
+![HLF-MIDI Cover](assets/hlf_midi_cover.png)
 
 ---
 
